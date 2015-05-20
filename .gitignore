@@ -3,5 +3,9 @@ db.sqlite3
 website.log
 /media
 /static
+/log
+/public
+/wsgi
+/tmp
 /website/settings.py
 /fa/static/materialize

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir -p media/ log/ tmp/ public/ static/
+chown -R www-data:www-data media/ log/ tmp/
+
 DIRS=(avatar data themes thumbnail root)
 for DIR in "${DIRS[@]}"; do
     mkdir -p wsgi/${DIR}/
@@ -12,3 +15,4 @@ for DIR in "${DIRS[@]}"; do
     ln -s ../../website/ website
     cd -
 done
+
